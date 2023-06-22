@@ -1,6 +1,4 @@
-![alt text][logo]
-
-[logo]:https://crdroid.net/img/logo.png "crDroid Android"
+# ~~crDroid~~ ArbitrarilyTong
 
 ## 1. Grabbing the source ##
 
@@ -32,11 +30,11 @@ $ chmod a+x ~/bin/repo
 ```bash
 # Create a directory for the source files
 # This can be located anywhere (as long as the fs is case-sensitive)
-$ mkdir crDroid
-$ cd crDroid
+$ mkdir ArbitrarilyTong
+$ cd ArbitrarilyTong
 
 # Install Repo in the created directory
-$ repo init -u https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs
+$ repo init -u https://github.com/ArbitrarilyTong/android.git -b 13.0 --git-lfs
 ```
 
 This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
@@ -76,11 +74,11 @@ Set those overlays to proper paths
 
 Frameworks base  
 ```overlay/frameworks/base/core/res/res/values/config.xml```  
-[https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/core/res/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/core/res/res/values/cr_config.xml)
+[https://github.com/ArbitrarilyTong/frameworks_base/blob/13.0/core/res/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/core/res/res/values/cr_config.xml)
 
 SystemUI  
 ```overlay/frameworks/base/packages/SystemUI/res/values/config.xml```  
-[https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/packages/SystemUI/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/packages/SystemUI/res/values/cr_config.xml)
+[https://github.com/ArbitrarilyTong/frameworks_base/blob/13.0/packages/SystemUI/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/13.0/packages/SystemUI/res/values/cr_config.xml)
 
 ### 4.2 Translations ###
 We use Crowdin for translations since it is easy and everyone can do it.  
@@ -95,4 +93,4 @@ To do so, we have made a [small template](https://github.com/crdroidandroid/crdr
 So posted on forums and your users are enjoying your build.  
 Well you can help out your users by letting them know when you fix stuff in your builds with the help of our OTA app.   
 Since crDroid Oreo, if you want to be on the official maintainers list, you'll need to provide OTA access.  
-You can set it up really easy by reading [android_vendor_crDroidOTA](https://github.com/crdroidandroid/android_vendor_crDroidOTA/blob/13.0/README.md) repo description.
+You can set it up really easy by reading [android_vendor_crDroidOTA](https://github.com/ArbitrarilyTong/vendor_tongOTA/blob/13.0/README.md) repo description.
