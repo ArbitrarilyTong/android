@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- ArbitrarilyTong Repo -->
+    <remote name="tong"
+        fetch="https://github.com/"
+        sync-c="true"
+        sync-j="4"
+        revision="refs/heads/13.0" />
+    <remote name="tong-gogs" fetch="https://c70v34.top/ArbitrarilyTong" />
+    <remote name="tong-codeberg" fetch="https://codeberg.org/ArbitrarilyTong/" />
+    <!-- ArbitrarilyTong Repo -->
+
+    <remove-project name="crdroidandroid/android_bionic" />
+    <project path="bionic" name="ArbitrarilyTong/bionic" groups="pdk" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_build" />
+    <project path="build/make" name="ArbitrarilyTong/build" groups="pdk" remote="tong">
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <remove-project name="crdroidandroid/android_frameworks_av" />
+    <project path="frameworks/av" name="ArbitrarilyTong/frameworks_av" groups="pdk" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_frameworks_base" />
+    <project path="frameworks/base" name="ArbitrarilyTong/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="tong"
+        revision="ArbitrarilyTong-13.0" />
+
+    <remove-project name="crdroidandroid/android_lineage-sdk" />
+    <project path="lineage-sdk" name="ArbitrarilyTong/lineage-sdk" remote="tong" revision="ArbitrarilyTong-13.0" />
+
+    <remove-project name="crdroidandroid/android_packages_apps_Backgrounds" />
+    <project path="packages/apps/Backgrounds" name="ArbitrarilyTong/packages_apps_Backgrounds" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_packages_apps_crDroidSettings" />
+    <project path="packages/apps/crDroidSettings" name="ArbitrarilyTong/packages_apps_crDroidSettings" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_packages_apps_Settings" />
+    <project path="packages/apps/Settings" name="ArbitrarilyTong/packages_apps_Settings" groups="pdk-fs"
+        remote="tong" revision="ArbitrarilyTong-13.0" />
+
+    <remove-project name="crdroidandroid/android_packages_apps_SetupWizard" />
+    <project path="packages/apps/SetupWizard" name="ArbitrarilyTong/packages_apps_SetupWizard" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_vendor_addons" />
+    <project path="vendor/addons" name="ArbitrarilyTong/vendor_addons" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_vendor_crDroidOTA" />
+    <project path="vendor/crDroidOTA" name="ArbitrarilyTong/vendor_tongOTA" remote="tong" />
+
+    <remove-project name="crdroidandroid/android_vendor_crdroid" />
+    <project path="vendor/lineage" name="ArbitrarilyTong/vendor_crdroid" remote="tong" />
+
+    <!-- Add GAPPS -->
+    <project path="vendor/gapps" name="vendor_gapps" remote="tong-gogs" revision="13.0" />
+</manifest>
