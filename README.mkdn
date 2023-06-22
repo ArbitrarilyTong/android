@@ -43,7 +43,7 @@ and their change histories.
 
 ```bash
 # Let Repo take care of all the hard work
-$ repo sync
+$ repo sync -j$(nproc --all)
 ```
 
 ```bash
