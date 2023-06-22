@@ -43,7 +43,7 @@ and their change histories.
 
 ```bash
 # Let Repo take care of all the hard work
-$ repo sync -j$(nproc --all)
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags # if you need to check error logs,you can use -v
 ```
 
 ```bash
