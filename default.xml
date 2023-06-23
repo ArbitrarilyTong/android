@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- ArbitrarilyTong Repo -->
+  <remote name="tong-codeberg"
+    fetch="https://codeberg.org/ArbitrarilyTong" />
+  <remote name="tong"
+    fetch="https://github.com/"
+    sync-c="true"
+    sync-j="4"
+    revision="refs/heads/13.0" />
+  <!-- ArbitrarilyTong Repo -->
 
   <remote name="github"
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/lineage-20.0" />
-
-  
-    <remote name="tong-codeberg"
-          fetch="https://codeberg.org/ArbitrarilyTong" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -25,12 +30,6 @@
            sync-j="4" />
 
   <remote  name="crdroid"
-           fetch="https://github.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/13.0" />
-
-  <remote  name="tong"
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
