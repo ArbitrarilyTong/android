@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- ArbitrarilyTong 仓库 -->
+  <remote name="tong-codeberg"
+    fetch="https://codeberg.org/ArbitrarilyTong" />
+  <remote name="tong"
+    fetch="https://github.com/"
+    sync-c="true"
+    sync-j="4"
+    revision="refs/heads/13.0" />
+  <!-- ArbitrarilyTong 仓库 -->
+
+  <!-- 如果同步速度过于缓慢，请尝试将fetch部分修改为https://ghproxy.com/https://github.com/ -->
   <remote name="github"
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/lineage-20.0" />
 
-  
-    <remote name="tong-codeberg"
-          fetch="https://codeberg.org/ArbitrarilyTong" />
-
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <!-- 如果同步速度过于缓慢，请尝试将fetch部分修改为https://mirrors.tuna.tsinghua.edu.cn/git/AOSP -->
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
@@ -24,13 +32,8 @@
            sync-c="true"
            sync-j="4" />
 
+  <!-- 如果同步速度过于缓慢，请尝试将fetch部分修改为https://ghproxy.com/https://github.com/ -->
   <remote  name="crdroid"
-           fetch="https://github.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/13.0" />
-
-  <remote  name="tong"
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
