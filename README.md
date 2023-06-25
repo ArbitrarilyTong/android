@@ -84,6 +84,9 @@ Enter the following to initialize the repository:
 mkdir ArbitrarilyTong
 cd ArbitrarilyTong
 
+# Enable LFS features
+git lfs install
+
 # Install Repo in the created directory
 repo init -u https://github.com/ArbitrarilyTong/android.git -b 13.0 --git-lfs
 ```
