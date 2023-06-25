@@ -2,9 +2,9 @@
 <manifest>
   <!-- ArbitrarilyTong Repo -->
   <remote name="tong-codeberg"
-    fetch="https://codeberg.org/ArbitrarilyTong" />
+    fetch="https://codeberg.org/ArbitrarilyTong/" />
   <remote name="tong"
-    fetch="https://github.com/"
+    fetch="https://github.com/ArbitrarilyTong/"
     sync-c="true"
     sync-j="4"
     revision="refs/heads/13.0" />

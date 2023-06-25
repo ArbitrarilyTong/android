@@ -71,7 +71,7 @@ yay -S repo
 
 以下分支可用于构建：
 
-- 13.0（基于 crDroid）
+- ArbitrarilyTong-13.0（基于 crDroid）
 
 输入以下命令以初始化代码仓库：
 
@@ -85,7 +85,7 @@ cd ArbitrarilyTong
 git lfs install
 
 # 在创建的目录中安装 Repo
-repo init -u https://github.com/ArbitrarilyTong/android.git -b 13.0 --git-lfs
+repo init -u https://github.com/ArbitrarilyTong/android.git -b ArbitrarilyTong-13.0 --git-lfs
 ```
 
 ## 同步源代码
@@ -159,7 +159,7 @@ cd $OUT
 这里将找到所有创建的文件。其中比较重要的两个文件是：
 
 - `boot.img`，PixelExperience 的引导映像，包含恢复-ramdisk。
-- 以 `crDroid_` 开头的 zip 文件，是 crDroid 安装程序包。
+- 以 `ArbitrarilyTong-` 开头的 zip 文件，是 crDroid 安装程序包。
 
 <!-- reference infos -->
 [crd]: https://github.com/crdroidandroid

@@ -74,7 +74,7 @@ yay -S repo
 
 The following branches can be used to build:
 
-- 13.0 (Based on crDroid)
+- ArbitrarilyTong-13.0 (Based on crDroid)
 
 Enter the following to initialize the repository:
 
@@ -88,7 +88,7 @@ cd ArbitrarilyTong
 git lfs install
 
 # Install Repo in the created directory
-repo init -u https://github.com/ArbitrarilyTong/android.git -b 13.0 --git-lfs
+repo init -u https://github.com/ArbitrarilyTong/android.git -b ArbitrarilyTong-13.0 --git-lfs
 ```
 
 ## Sync the source code
@@ -164,7 +164,7 @@ cd $OUT
 There you’ll find all the files that were created. The two files of more interest are:
 
 - `boot.img`, which is the PixelExperience boot image, and contains the recovery-ramdisk.
-- A zip file whose name starts with `crDroid_`, which is the crDroid installer package.
+- A zip file whose name starts with `ArbitrarilyTong-`, which is the crDroid installer package.
 
 <!-- reference infos -->
 [crd]: https://github.com/crdroidandroid
