@@ -57,4 +57,7 @@
 
     <!-- Add GAPPS -->
     <project path="vendor/gapps" name="vendor_gapps" remote="tong-gogs" revision="13.0" />
+
+    <!-- ArbitrarilyTong Vendor by easterNday -->
+    <project path="ArbitrarilyTong" name="ArbitrarilyTong/vendor_easterNday" remote="tong" revision="main" />
 </manifest>
