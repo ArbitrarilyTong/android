@@ -10,6 +10,9 @@
     <remote name="tong-codeberg" fetch="https://codeberg.org/ArbitrarilyTong/" />
     <!-- ArbitrarilyTong Repo -->
 
+    <remove-project name="crdroidandroid/android" />
+    <project path="android" name="ArbitrarilyTong/android" remote="tong" />
+
     <remove-project name="crdroidandroid/android_bionic" />
     <project path="bionic" name="ArbitrarilyTong/bionic" groups="pdk" remote="tong" />
 
@@ -60,4 +63,10 @@
 
     <!-- ArbitrarilyTong Vendor by easterNday -->
     <project path="ArbitrarilyTong" name="ArbitrarilyTong/vendor_easterNday" remote="tong" revision="main" />
+
+    <!-- TWRP -->
+    <!-- <remove-project name="crdroidandroid/android_bootable_recovery" /> -->
+    <!-- <project path="bootable/recovery" name="ArbitrarilyTong/bootable_twrp" remote="tong" revision="android-13"/> -->
+    <!-- Include phh's treble repo for lptools support -->
+    <!-- <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" /> -->
 </manifest>
